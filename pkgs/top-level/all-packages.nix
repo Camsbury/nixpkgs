@@ -27050,6 +27050,8 @@ in
 
   ries = callPackage ../applications/science/math/ries { };
 
+  ringcentral-meetings = libsForQt5.callPackage ../applications/networking/instant-messengers/ringcentral-meetings { };
+
   ripcord = qt5.callPackage ../applications/networking/instant-messengers/ripcord { };
 
   ripser = callPackage ../applications/science/math/ripser { };

@@ -1671,6 +1671,12 @@
     githubId = 289492;
     name = "Philip Horger";
   };
+  camsbury = {
+    email = "camsbury7@gmail.com";
+    github = "Camsbury";
+    githubId = 7485022;
+    name = "Cameron Kingsbury";
+  };
   candeira = {
     email = "javier@candeira.com";
     github = "candeira";
