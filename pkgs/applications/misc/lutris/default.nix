@@ -4,9 +4,11 @@
 
   # build inputs
 , atk
+, cacert
 , file
 , gdk-pixbuf
 , glib-networking
+, glibc
 , gnome-desktop
 , gobject-introspection
 , gst_all_1
@@ -44,6 +46,7 @@
 , p7zip
 , xgamma
 , libstrangle
+, wget
 , wine
 , fluidsynth
 , xorgserver
@@ -97,6 +100,7 @@ buildPythonApplication rec {
   buildInputs = [
     atk
     gdk-pixbuf
+    glibc
     glib-networking
     gnome-desktop
     gobject-introspection
@@ -108,6 +112,7 @@ buildPythonApplication rec {
   ] ++ gstDeps;
 
   propagatedBuildInputs = [
+    cacert
     evdev
     distro
     lxml
@@ -118,6 +123,7 @@ buildPythonApplication rec {
     dbus-python
     keyring
     python-magic
+    wget
   ];
 
   postPatch = ''
